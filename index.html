@@ -1,0 +1,116 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Матрёшка</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+
+    </header>
+
+    <section class="home">
+        <div class="home-content">
+            <div class="logo">
+                <img src="/source/Matreshka.png" alt="">
+            </div>
+            <h1>SEND MENU</h1>
+            <div class="gal">
+                <a href="#menus" onclick="smoothScroll('#menus')">
+                    <img src="/source/link.png" alt="">
+                </a>
+            </div>
+        </div>
+
+        <div class="figur-1">
+                <img src="/source/fig1.png" alt="">
+            </div>
+        <div class="figur-2">
+            <img src="/source/fig2.png" alt="">
+        </div>
+
+        <div class="figur-3">
+            <img src="/source/fig1.png" alt="">
+        </div>
+        <div class="figur-4">
+            <img src="/source/fig2.png" alt="">
+        </div>
+
+    </section>
+
+    <section class="voln">
+        <img src="/source/Voln2.png" alt="">
+    </section>
+        
+    <section id="us" class="about-us">
+        <img class="fart" src="/source/Fart.png" alt="">
+        <div class="us-content">
+            <h1>О нас</h1>
+            <div class="text-container">
+                <p class="paragraph-1">Добро пожаловать в ресторан "Матрешка" – уютное гнездо в самом сердце города, где встречаются традиции вкуса и тепла русской гостеприимности. </p>
+                <p class="paragraph-2">Наша история началась с любви к отборным продуктам, тайнам национальной кухни и стремлению подарить каждому гостю неповторимый опыт.</p>
+                <p class="paragraph-1">Мы верим, что атмосфера ресторана – это неотъемлемая часть вашего визита, поэтому важно чтобы вы чувствовали себя как дома, окруженные уютом и теплом.</p>
+                <p class="paragraph-2">Наши интерьеры, вдохновленные народным искусством, приглашают вас на увлекательное путешествие по богатой культурной мозаике России.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="voln">
+        <img src="/source/Voln.png" alt="">
+    </section>
+
+    <section id="menus" class="menu">
+        <div class="categories" id="categories">
+            <span class="category" onclick="changeCategory(0)">Завтраки</span>
+            <span class="category" onclick="changeCategory(1)">Супы</span>
+            <span class="category" onclick="changeCategory(2)">Коктейли</span>
+        </div>
+
+        <div class="slider" id="slider">
+            <div class="slide">
+                <img src="/source/Sup.png" alt="Photo 1">
+            </div>
+            <div class="slide">
+                <img src="/source/breakfast.png" alt="Photo 2">
+            </div>
+            <div class="slide">
+                <img src="/source/coctail.png" alt="Photo 3">
+            </div>
+        </div>
+        <div class="gals">
+            <a onclick="nextSlide()">
+                <img src="/source/Next.png" alt="">
+            </a>
+        </div>
+    </section>
+
+    <section class="voln">
+        <img src="/source/Voln2.png" alt="">
+    </section>
+
+    <section id="contact" class="contacts">
+        <div class="contact-content">
+            <h1>Контакты</h1>
+            <h2>Moscow, Kutuzovsky prospect, 2 / 1s6</h2>
+            <h3>+7 (495) 025 25 65</h3>
+            <h2>info@matryoshka-rest.ru</h2>
+
+            <div class="social">
+                <img src="/source/vk.png" alt="">
+                <a href="https://t.me/revuls1on" target="_blank">
+                    <img src="/source/telega.png" alt="">
+                </a>
+                <img src="/source/inst.png" alt="">       
+            </div>
+
+        </div>
+    </section>
+    
+    <footer>
+        
+    </footer>
+
+    <script src="index.js"></script>
+</body>
+</html>

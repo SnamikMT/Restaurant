@@ -1,0 +1,348 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.home {
+    background: #1E0F00;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.logo {
+    margin-bottom: 100px;
+}
+
+.gal {
+    text-align: center;
+    margin-top: 80px;
+    cursor: pointer;
+    animation: ups-and-downs .9s ease infinite alternate;
+    animation-delay: 0.3s;
+}
+
+.home-content {
+    position: relative;
+}
+
+.home-content h1 {
+    color: #FFF;
+    text-align: center;
+    font-family: Comfortaa;
+    font-size: 60px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+.figur-1 {
+    right: 0;
+    bottom: 0;
+    position: absolute;
+    margin-bottom: 35px;
+    margin-right: 80px;
+    animation: slideBottomLeft .9s ease-in-out infinite alternate;
+    animation-delay: 0.5s;
+} 
+
+.figur-2 {
+    right: 0;
+    bottom: 0;
+    position: absolute;
+    margin-bottom: 120px;
+    margin-right: 80px;
+    animation: slideTopRight .9s ease-in-out infinite alternate;
+    animation-delay: 0.5s;
+}
+
+.figur-3 {
+    left: 0;
+    top: 0;
+    position: absolute;
+    margin-left: 80px;
+    margin-top: 35px;
+    animation: slideTopLeft .9s ease-in-out infinite alternate;
+    animation-delay: 0.5s;
+} 
+
+.figur-4 {
+    left: 0;
+    top: 0;
+    position: absolute;
+    margin-left: 80px;
+    margin-top: 120px;
+    animation: slideBottomRight .9s ease-in-out infinite alternate;
+    animation-delay: 0.5s;
+}
+
+@keyframes slideBottomLeft {
+    from {
+        right: 0;
+        bottom: 0;
+    }
+    to {
+        right: 43px;
+        bottom: 43px;
+    }
+}
+
+@keyframes slideTopRight {
+    from {
+        right: 0;
+        bottom: 0;
+    }
+    to {
+        right: -43px;
+        bottom: -43px;
+    }
+}
+
+@keyframes slideTopLeft {
+    from {
+        left: 0;
+        top: 0;
+    }
+    to {
+        left: 43px;
+        top: 43px;
+    }
+}
+
+@keyframes slideBottomRight {
+    from {
+        left: 0;
+        top: 0;
+    }
+    to {
+        left: -43px;
+        top: -43px;
+    }
+}
+
+@keyframes ups-and-downs {
+    from {
+        transform: translateY(0);
+    }
+    to {
+        transform: translateY(-25px);
+    }
+}
+
+/* Блок Меню */
+
+.menu {
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    background: #1E0F00;
+    color: #fff;
+    text-align: center;
+    overflow: hidden;
+}
+
+.categories {
+    margin-bottom: 60px;
+    padding-top: 80px;
+}
+
+.category {
+    color: #FFF;
+    text-align: center;
+    font-family: Comfortaa;
+    font-size: 42px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    margin: 5px;
+    padding: 10px;
+    cursor: pointer;
+    user-select: none;
+    transition: transform 0.5s ease, color 0.5s ease;
+}
+
+.category:active {
+    transform: translateY(30px); 
+}
+
+.category.highlighted {
+    color: #F14841; 
+}
+
+
+.gals {
+    cursor: pointer;
+    animation: ups-and-downs .9s ease infinite alternate;
+    animation-delay: 0.3s;
+    height: auto;
+    text-align: center;
+}
+
+.slider {
+    display: flex; 
+    transition: transform 0.5s ease-in-out;
+}
+
+.slide {
+    flex: 0 0 100%;
+    transform: translateX(0);
+    opacity: 1;
+    transition: transform 0.5s ease-in-out, opacity 0.5s ease-in-out;
+}
+
+.slide img {
+    max-width: 100%;
+    height: auto;
+}
+
+button {
+    margin-top: 10px;
+    padding: 10px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+/* Блок о нас */
+.about-us {
+    width: 100%;
+    height: 100vh; 
+    margin: 0;
+    color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.fart{
+    position: absolute;
+    left: 40px;
+    width: 600px;
+    animation: ups-and-downs .9s ease infinite alternate;
+    animation-delay: 0.3s;
+}
+
+.us-content h1 {
+    color: #1B1B1B;
+    font-family: Comfortaa;
+    font-size: 64px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    margin-left: 95px;
+}
+
+.text-container {
+    margin-left: 90px;
+    color: #000;
+    font-family: "Century Gothic";
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 100;
+    line-height: normal;
+    width: 700px; 
+    text-align: left;
+}
+
+.text-container p {
+    position: relative;
+    padding-left: 20px; 
+    line-height: 1.5; 
+}
+
+.text-container .paragraph-1::before {
+    content: '\2022'; 
+    font-size: 120px; 
+    color: #F3574B; 
+    position: absolute;
+    left: 0;
+    top: 40%;
+    transform: translateY(-60%);
+    margin-left: -60px; 
+}
+
+.text-container .paragraph-2::before {
+    content: '\2022';
+    font-size: 120px;
+    color: #000000; 
+    position: absolute;
+    left: 0;
+    top: 40%;
+    transform: translateY(-60%);
+    margin-left: -60px;
+}
+
+/* Блок контакты */
+
+.contacts {
+    background: #FFF;
+    color: #1E0F00;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.contact-content a {
+    text-decoration: none;
+}
+
+.contact-content h1 {
+    color: #1E0F00;
+    text-align: center;
+    font-family: Vinque;
+    font-size: 64px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    margin-top: -60px;
+}
+
+.contact-content h2 {
+    color: #1E0F00;
+    text-align: center;
+    font-family: Comfortaa;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin-bottom: 70px;
+}
+
+.contact-content h3 {
+    color: #F14841;
+    text-align: center;
+    font-family: Comfortaa;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin-bottom: 70px;
+}
+
+.social {
+    text-align: center;
+    margin-top: 60px;
+    opacity: 1; 
+    transition: opacity 0.5s ease;
+}
+
+.social img {
+    margin: 0 28px;
+    cursor: pointer;
+}
+
+.social img:hover {
+    opacity: 0.5; 
+    transition: opacity 0.5s ease;
+}
